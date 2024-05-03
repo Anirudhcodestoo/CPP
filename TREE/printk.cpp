@@ -29,6 +29,7 @@ printk(root->right,k--);
 int main(){
     int k;
     cin>>k;
-
+    node *root=
+printk(root,k);
     return 0;
 }

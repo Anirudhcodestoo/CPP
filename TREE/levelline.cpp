@@ -60,6 +60,7 @@ void method2(node *root)
              q.push(curr->right);
 
         }
+        cout<<"\n";
     }
 }
 int main(){

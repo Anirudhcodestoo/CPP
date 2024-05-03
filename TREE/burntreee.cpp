@@ -30,7 +30,7 @@ int burntree(node *root, int leaf,int &distance)
     {
        distance= 1+ldis;
        res=max(res,dist+rh);
-    }
+    }   
     if(rdis!=-1)
     {
        distance = 1+rdis;
