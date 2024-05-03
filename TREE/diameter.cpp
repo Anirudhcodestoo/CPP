@@ -27,12 +27,14 @@ int diameter(node *root)
 if(root==NULL)
 return 0;   
 else    
-int d1=max(height(root->left),height(root->right) +1);
+int d1=height(root->left),height(root->right)+1;
 int d2=diameter(root->left);
 int d3=diameter(root->right);
 return max(d1,max(d2,d3));
+
 }
 
+// use hasshing to 
 int main(){
     node *root= new node(10);
     root->left= new node(20);

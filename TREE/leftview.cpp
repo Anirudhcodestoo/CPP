@@ -42,16 +42,16 @@ while(q.empty()==false)
 }
 }
 
-int leftv(node *root,int count)
+int leftv(node *root,int level)
 {
     if(root==NULL)
     return;
-    if(count>visited)
+    if(level>visited)
     {
-        visited=count;
+        visited=level;
         cout<<root->key<<" ";
     }
-    leftv(root,count+1);
+    leftv(root,level+1);
 
 
 
@@ -64,7 +64,7 @@ int main(){
     root->left->right=new node(50);
     root->right->right=new node (60);
    left(root);
-   int count;
+   int level;
    visited(root,1);
    
         return 0;

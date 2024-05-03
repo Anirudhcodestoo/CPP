@@ -3,6 +3,7 @@
 #include<algorithm>
 #include<climits>
 using namespace std;
+int visited=0;
 struct node
 {
     int key;
